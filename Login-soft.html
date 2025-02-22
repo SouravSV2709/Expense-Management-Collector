@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" data-theme="light" font="arial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+            plugins: [daisyui],
+            daisyui: {
+                themes: ["luxury", "light", "dark", "cupcake", "emarald", "retro"],
+            },
+        };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="p-4 flex items-center justify-around w-full">
+        <img src="Aashiyana.png" alt="Society Logo" class="w-10 h-10 m-4">
+        <h1 class="text-lg font-bold text-black items-center">Aashiyana Housing Co-operative Society</h1>
+        <div class="avatar">
+            <div class="w-10 h-10 m-4 rounded-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="flex flex-col items-center flex-grow p-4 w-full">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-full md:max-w-4xl">
+            <div class="card font-bold">
+                <h2 class="text-2xl font-semibold mb-4 text-center">Login</h2>
+                <form class="space-y-4">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Username</span>
+                        </label>
+                        <input type="text" placeholder="Enter your username" class="input input-bordered w-full" />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Password</span>
+                        </label>
+                        <input type="password" placeholder="Enter your password" class="input input-bordered w-full" />
+                    </div>
+                    <div class="form-control mt-4">
+                        <button class="btn btn-primary w-full">Login</button>
+                    </div>
+                    <p class="text-sm text-center"> Forgot Password? Contact your admin. </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Navigation Section -->
+    <div class="btm-nav-sm mt-4 mb-4 flex items-center justify-around w-full">
+        <button>
+            <img src="home.ico" alt="Home" class="w-10 h-10 rounded-full justify-center items-center mx-5">
+            <span class="btm-nav-sm-label ">Dashboard</span>
+        </button>
+        <button>
+            <img src="paymentcollection.ico" alt="Payment"
+                class="w-10 h-10 rounded-full justify-center items-center mx-5">
+            <span class="btm-nav-sm-label">Collection</span>
+        </button>
+        <button>
+            <img src="Extraservices.ico" alt="Settings" class="w-10 h-10 rounded-full justify-center items-center mx-5">
+            <span class="btm-nav-sm-label">Services</span>
+        </button>
+        <button  class="active">
+            <img src="Profile.ico" alt="Profile" class="w-10 h-10 rounded-full justify-center items-center mx-5">
+            <span class="btm-nav-sm-label">Profile</span>
+        </button>
+    </div>
+        <!-- Footer Section -->
+    <div>     
+     <footer class="footer bg-neutral text-white text-center p-4">&copy; 2025 Expense-Manager. All rights reserved.</footer>
+    </div>
+
+
+
+</body>
+
+</html>
